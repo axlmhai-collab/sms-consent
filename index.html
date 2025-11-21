@@ -85,6 +85,16 @@
       border-radius: 6px;
       font-weight: 600;
     }
+    .sms {
+      background: rgba(5,8,20,0.8);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-top: 8px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95rem;
+    }
     ul { margin: 8px 0 0 18px; }
     footer {
       max-width: 900px;
@@ -109,7 +119,7 @@
     <h1>Text Message Opt-In & Consent</h1>
     <p>
       This page explains how customers opt in to receive SMS messages from
-      <strong>[AXL SOLUTIONS]</strong>.
+      <strong>AXL SOLUTIONS</strong>.
     </p>
   </header>
 
@@ -118,23 +128,45 @@
     <section class="card">
       <h2>Who is sending messages?</h2>
       <p>
-        Messages are sent by <strong>[AXL SOLUTIONS]</strong> to provide
-        updates related to <strong>[FLIGHT LAND NOTIFICATION]</strong>.
+        Messages are sent by <strong>AXL SOLUTIONS</strong> to provide
+        real-time updates related to <strong>Flight Landing Notifications</strong>.
       </p>
       <p class="small">
-        Contact: <strong>[AXL.MHAI@GMAIL.COM]</strong> • Phone: <strong>[+1 (866) 551-8969]</strong>
+        Contact: <strong>axl.mhai@gmail.com</strong> • Phone: <strong>+1 (866) 551-8969</strong>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Use-Case: Airline Landing Notification Project</h2>
+      <p>
+        This SMS program sends time-sensitive, transactional flight arrival updates to travelers
+        and airport pickup/ground coordination teams. Customers opt in to receive
+        automated alerts based on live flight status events.
+      </p>
+      <ul>
+        <li>Flight ETA updates and delay notifications</li>
+        <li>Landing confirmation</li>
+        <li>Gate / terminal changes (when available)</li>
+        <li>Baggage claim carousel assignment (when available)</li>
+        <li>Pickup or shuttle coordination instructions</li>
+      </ul>
+      <p class="small">
+        This service does <strong>not</strong> send marketing or promotional texts.
+        Messages are only sent to users who explicitly opt in.
       </p>
     </section>
 
     <section class="card">
       <h2>What you’ll receive</h2>
       <ul>
-        <li>Service updates (ex: booking confirmations, delivery changes, reminders)</li>
+        <li>Flight ETA / delay alerts</li>
+        <li>Landing confirmation updates</li>
+        <li>Gate, terminal, or baggage claim changes (if applicable)</li>
+        <li>Pickup coordination instructions</li>
         <li>Customer support responses</li>
-        <li>Important operational notices</li>
       </ul>
       <p class="small">
-        Message frequency: <strong>[AS MANY PICK UPS YOU ARE ASSIGNED]</strong>
+        Message frequency: <strong>2–6 messages per trip, depending on flight events and assigned pickups.</strong>
       </p>
     </section>
 
@@ -145,7 +177,7 @@
       </p>
       <div class="steps">
         <div class="step">
-          <strong>Step 1:</strong> Text <code>JOIN</code> to <strong>[+1 866 551 8969]</strong>
+          <strong>Step 1:</strong> Text <code>JOIN</code> to <strong>+1 (866) 551-8969</strong>
         </div>
         <div class="step">
           <strong>Step 2:</strong> You will receive a confirmation message asking you to reply <code>YES</code> to subscribe.
@@ -156,9 +188,40 @@
       </div>
 
       <p class="small" style="margin-top:12px;">
-        You can also opt in by requesting SMS updates during a service interaction.
-        We only message customers who explicitly request SMS communication.
+        We only send messages to customers who explicitly request SMS communication.
       </p>
+    </section>
+
+    <section class="card">
+      <h2>Example messages (what SMS will look like)</h2>
+      <p class="small">These are sample texts customers may receive:</p>
+
+      <div class="sms">
+AXL SOLUTIONS: Thanks for subscribing to Flight Landing Alerts.
+You’ll receive ETA/landing updates for your trip.
+Reply STOP to opt out, HELP for help. Msg & data rates may apply.
+      </div>
+
+      <div class="sms">
+AXL SOLUTIONS: Flight {FlightNumber} to {Destination} is now estimated to arrive at {ETA}.
+We’ll notify you when it lands. Reply STOP to opt out.
+      </div>
+
+      <div class="sms">
+AXL SOLUTIONS: ✅ Flight {FlightNumber} has LANDED at {AirportCode}.
+Gate: {Gate} • Terminal: {Terminal}. Reply STOP to opt out.
+      </div>
+
+      <div class="sms">
+AXL SOLUTIONS: Baggage claim for Flight {FlightNumber} is Carousel {CarouselNumber}.
+Reply HELP for support. Reply STOP to opt out.
+      </div>
+
+      <div class="sms">
+AXL SOLUTIONS: Gate change for Flight {FlightNumber}.
+New Gate: {NewGate}. Check airport displays for updates.
+Reply STOP to opt out.
+      </div>
     </section>
 
     <section class="card">
@@ -190,15 +253,18 @@
       </p>
       <p>
         Read our full policies:
-        <a href="[LINK]" target="_blank">Privacy Policy</a> •
-        <a href="[LINK]" target="_blank">Terms of Service</a>
+        <a href="LINK_TO_PRIVACY_POLICY" target="_blank">Privacy Policy</a> •
+        <a href="LINK_TO_TERMS" target="_blank">Terms of Service</a>
+      </p>
+      <p class="small">
+        (Replace the two links above with your real Privacy + Terms URLs before submitting.)
       </p>
     </section>
 
   </main>
 
   <footer>
-    © <span id="year"></span> [AXL SOLUTIONS]. All rights reserved.
+    © <span id="year"></span> AXL SOLUTIONS. All rights reserved.
   </footer>
 
   <script>
